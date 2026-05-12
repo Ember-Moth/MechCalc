@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mechcalc"
+    namespace = "com.embermoth.mechcalc"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -19,11 +19,17 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.mechcalc"
+        applicationId = "com.embermoth.mechcalc"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.getByName("debug")
+        }
     }
 }
 
