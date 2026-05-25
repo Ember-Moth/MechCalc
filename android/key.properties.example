@@ -1,0 +1,4 @@
+storeFile=/absolute/path/to/mechcalc-release.jks
+storePassword=change-me
+keyAlias=mechcalc
+keyPassword=change-me
